@@ -27,7 +27,7 @@ class _OTPScreenState extends State<OTPScreen> {
         return Display();
       }), (route) => false);
     } on FirebaseAuthException catch (e) {
-      Navigator.pop(context);
+      // Navigator.pop(context);
       ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(e.code)));
     }
